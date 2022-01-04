@@ -1,0 +1,25 @@
+<style>a{text-decoration:none;}</style>
+   
+<div class="nav-bar">
+    
+        <b>
+            <ul>
+           <li class="active"><a href="/home" *ngIf="!islogin()">HOME</a></li>
+           <li><a href="/studentregistration" *ngIf="!islogin()">REGISTRATION</a></li>
+           <li><a href="/login" *ngIf="!islogin()">LOGIN</a>
+            <div class="sub-nav-1">
+                <ul>
+                    <li><a href="/userlogin" *ngIf="!islogin()">USER</a></li>
+                   <li><a href="/adminlogin" *ngIf="!islogin()">ADMIN</a></li>
+                </ul>
+            </div></li>
+           <li><a href="/updatejob" *ngIf="!islogin()">JOB UPDATE</a></li>
+           <li><a href="/contactus" *ngIf="!islogin()">CONTACT US</a></li>
+           <li><a href="/aboutus" *ngIf="!islogin()">ABOUT US</a></li>
+           <li><a href="#" (click)="logout()" *ngIf="!islogin()">LOGOUT</a></li>
+        </ul>
+
+        </b>  
+        </div>
+
+        
